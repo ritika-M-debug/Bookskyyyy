@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSkyyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar" >
+       <h1>Bookskyyy</h1> 
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>Robert</h4>
+            <p> This personal finance classic tells the story of Kiyosaki growing up with two influential fathers: his biological father (the "poor dad"), who was a highly educated government official but struggled financially, and his best friend's father (the "rich dad"), a wealthy entrepreneur. The book focuses on financial education, explaining the difference between assets (which put money in your pocket) and liabilities (which take money out). It challenges the idea that a high income is necessary for wealth and encourages building financial independence through investing, real estate, and starting businesses.</p>
+            <button onclick="deletebook(event)" >Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>The God of Small Things</h2>
+            <h4>Arundhati Roy</h4>
+            <p>This award-winning novel is a poignant story about fraternal twins, Esthappen and Rahel, whose childhood in Kerala, India, is fractured by the "Love Laws" of society. It explores how seemingly small, everyday events can have massive, life-altering consequences on people's lives and relationships.</p>
+            <button onclick="deletebook(event)" >Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancle-book">Cancle</button>
+        </form>
+    </div>
+    <button class="add-btn" id="add-popup-btn" >+</button>
+    <script src="script.js  "></script>
+</body>
+</html>
